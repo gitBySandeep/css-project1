@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+#container{   
+    height: auto;
+    width: 95%;
+    margin: auto;
+}
+#header{
+    height: 60px;
+    background-color: white;
+}
+#header_logo{
+    height: 40px;
+    background-color: white;
+}
+#nav{
+    height: 30px;
+    padding: 10px;
+    background-color: goldenrod;
+}
+#nav ul{
+    list-style: none;
+}
+#nav ul li{
+    display: inline;
+    margin: 30px;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: candara;
+}
+#nav ul li a:hover{
+    color: black;
+}
+#nav ul li ul{
+    display: none;
+}
+#nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 90px;
+    background-color: goldenrod;
+    margin-left: 280px;
+    font-size: 22px;
+    font-family: candara;
+}
+#nav ul li ul li{
+    margin-left: -10px;
+    line-height: 40px;
+}
+#nav ul li ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+#banner{
+    background-color: green;
+    height: 490px;
+}
+#bannerimage{
+    height: 490px;
+    width: 100%;
+}

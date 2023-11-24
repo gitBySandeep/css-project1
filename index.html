@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .first {
+            height: 700px;
+            /* border: 1px solid red; */
+            background-color: #150B63;
+        }
+
+        .manubar {
+            height: 80px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        .manubar h1 {
+            color: white;
+            height: 40px;
+            width: 100px;
+            position: relative;
+            left: 25px;
+        }
+
+        .manubar1 {
+            height: 20px;
+            width: 520px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            left: 49%;
+        }
+
+        .manubar1 a {
+            color: white;
+            height: 20px;
+            width: auto;
+            position: relative;
+            left: 5%;
+        }
+
+        .manubar1 a:hover {
+            color: #1094F0;
+        }
+
+        .manubar1 i {
+            height: 20px;
+            width: 20px;
+            left: 5%;
+            position: relative;
+        }
+
+        .login i {
+            color: white;
+        }
+
+        .login i:hover {
+            color: #1094F0;
+        }
+
+        .login i {
+            color: white;
+        }
+
+        .login1 i:hover {
+            color: #1094F0;
+        }
+
+        .left {
+            height: 430px;
+            width: 100%;
+            /* border: 1px solid gold; */
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 8%;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .text {
+            height: 340px;
+            width: 40%;
+            /* border: 1px solid red; */
+            position: relative;
+            left: 10%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text1 {
+            height: 100px;
+            width: 250px;
+            position: relative;
+            top: 5%;
+            color: white;
+            font-size: 26px;
+            /* border: 1px solid red; */
+        }
+
+        .text2 {
+            height: 60px;
+            width: auto;
+            color: white;
+            font-size: 14px;
+            /* border: 1px solid red; */
+            position: relative;
+            line-height: 18px;
+            top: 8%;
+        }
+
+        .text3 {
+            height: 35px;
+            width: 135px;
+            /* border: 1px solid red; */
+            position: relative;
+            top: 13%;
+        }
+
+        .text3 button {
+            border: none;
+            color: white;
+            background-color: #00BBF0;
+            height: 35px;
+            width: 135px;
+        }
+
+        .text3 button:hover {
+            background-color: #007FA4;
+        }
+
+        .right {
+            height: 340px;
+            width: 40%;
+            position: relative;
+            /* border: 1px solid red; */
+            left: 13%;
+            animation-name: images;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+        }
+
+        .right img {
+            height: 340px;
+            width: auto;
+        }
+
+        @keyframes images {
+            from {
+                top: -70px;
+            }
+
+            to {
+                top: 70px;
+            }
+        }
+
+        .second {
+            height: 600px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            top: 10%;
+            /* border: 1px solid red; */
+        }
+
+        .head1 {
+            height: 30px;
+            width: 200px;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+
+        .head1 span {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .head2 {
+            height: 30px;
+            width: 730px;
+            top: 40px;
+            font-size: 15px;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+        }
+
+        .service {
+            height: 400px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .wallet {
+            height: 280px;
+            width: 25%;
+            /* border: 1px solid red; */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F8F8F9;
+            /* left: 10%; */
+            /* top: 15%; */
+        }
+
+        .wallet img {
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            top: 12px;
+            /* border: 1px solid red; */
+        }
+
+        .wallet1 {
+            height: 30px;
+            width: 250px;
+            /* border: 1px solid red; */
+            position: absolute;
+            font-size: 15px;
+            top: 35%;
+        }
+
+        .wallet2 {
+            height: 50px;
+            width: 250px;
+            /* border: 1px solid red; */
+            font-size: 14px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 50%;
+        }
+
+        .wallet2 button {
+            height: 30px;
+            width: 120px;
+            position: absolute;
+            background-color: #F8F8F9;
+            top: 140%;
+            border: none;
+        }
+
+        .wallet button:hover {
+            color: #00BBF0;
+        }
+
+        .foot {
+            height: 35px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
+            position: relative;
+            left: 46%;
+            background-color: #1094F0;
+        }
+
+        .foot button {
+            border: none;
+            color: white;
+            background-color: #1094F0;
+            outline: none;
+            background: none;
+        }
+
+        .foot:hover {
+            background-color: #007FA4;
+        }
+
+        .third {
+            height: 580px;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #00204A;
+        }
+
+        .third-head {
+            height: 75px;
+            width: 100%;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .third-container {
+            height: 400px;
+            width: 100%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .About {
+            height: 30px;
+            width: 150px;
+            /* border: 1px solid red; */
+            font-weight: 600;
+            color: white;
+            font-size: 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .about1 {
+            height: 40px;
+            width: 850px;
+            color: white;
+            font-size: 14px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .third1 {
+            height: 350px;
+            width: 450px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .third1 img {
+            height: 350px;
+            width: 400px;
+            /* border: 1px solid red; */
+        }
+
+        .third2 {
+            height: 350px;
+            width: 400px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .third2 h1 {
+            height: 30px;
+            width: 180px;
+            /* border: 1px solid red; */
+        }
+
+        .third2 p {
+            height: 100px;
+            width: 350px;
+            font-size: 13px;
+            /* border: 2px solid red; */
+            line-height: 16px;
+            margin-top: 10px;
+        }
+
+        .third2 button {
+            height: 35px;
+            width: 140px;
+            border: none;
+            /* margin-top:px; */
+            /* border: 1px solid red; */
+            color: white;
+            background-color: #00BBF0;
+        }
+
+        .third2 button:hover {
+            background-color: #1094F0;
+        }
+
+        .fourth {
+            height: 1420px;
+            width: 100%;
+            /* border: 5px solid red; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fourth-header {
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .fourth-header span {
+            height: 30px;
+            width: 200px;
+            font-size: 25px;
+            font-weight: 700;
+            /* border: 1px solid red; */
+        }
+
+        .choose {
+            height: 280px;
+            width: 100%;
+            /* border: 1px solid red; */
+            /* position: relative;
+            top: 5%; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .choose1 {
+            height: 100px;
+            width: 100px;
+            border: 4px solid #00204A;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .choose1 img {
+            height: 50px;
+            width: 50px;
+            /* border: 4px solid red; */
+            border-radius: 50%;
+        }
+
+        .choose2 {
+            height: 30px;
+            width: 180px;
+            margin-top: 25px;
+            /* border: 1px solid red; */
+            margin-left: 20px;
+        }
+
+        .choose3 {
+            height: 60px;
+            width: 900px;
+            opacity: 0.8;
+            text-align: center;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+        }
+
+        .fourth-footer button {
+            height: 35px;
+            width: 145px;
+            background-color: #00BBF0;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 45%;
+            margin-top: 20px;
+            color: white;
+            border: none;
+        }
+
+        .fourth-footer button:hover {
+            background-color: #1094F0;
+        }
+
+        .fifth {
+            height: 550px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            background-color: #00204A;
+        }
+
+        .fifth-header {
+            height: 80px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .fifth-header span {
+            height: 30px;
+            width: 140px;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .fifth-container {
+            height: 400px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+
+        .fifth-container-one {
+            height: 270px;
+            width: 270px;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #00285D;
+            border: none;
+            /* justify-content: center; */
+        }
+
+        .fifth-one {
+            height: 100px;
+            width: 100px;
+            border: 3px white solid;
+            border-radius: 50%;
+            margin-top: 25px;
+        }
+
+        .fifth-one img {
+            height: 100px;
+            width: 100px;
+            /* border: 3px white solid; */
+            border-radius: 50%;
+        }
+
+        .fifth-two {
+            margin-top: 16px;
+        }
+
+        .fifth-three {
+            margin-top: 6px;
+        }
+
+        .fifth-four {
+            height: 30px;
+            width: 200px;
+            margin-top: 30px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fifth-four i {
+            height: 25px;
+            width: 100px;
+            color: white;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+
+        .fifth-four i:hover {
+            color: #00BBF0;
+        }
+
+        .sixth {
+            height: 490px;
+            /* border: 1px solid red; */
+        }
+
+        .sixth-header {
+            height: 100px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sixth-header span {
+            height: 30px;
+            width: 320px;
+            word-spacing: 2px;
+            font-size: 25px;
+            font-weight: 700;
+            /* border: 1px solid red; */
+        }
+
+        .sixth-box {
+            height: 320px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .sixth-box-one {
+            height: 230px;
+            width: 450px;
+            /* margin-left: 10%; */
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            background-color: #FFFFFF;
+        }
+
+        .six1 {
+            height: 25px;
+            width: 90px;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        .six2 {
+            height: 25px;
+            width: 110px;
+            opacity: 0.7;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        .six3 {
+            height: 65px;
+            width: 370px;
+            opacity: 0.7;
+            /* border: 1px solid red; */
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        .six1 i {
+            height: 15px;
+            width: 30px;
+            /* border: 1px solid red; */
+            margin-top: -10px;
+            margin-left: 310px;
+        }
+
+        .sixth-footer {
+            height: 40px;
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* align-items: center; */
+            /* border: 1px solid red; */
+            margin-left: 44%;
+        }
+
+        .foot1 {
+            height: 40px;
+            width: 40px;
+            border: white 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: 2px solid white;
+        }
+
+        .sixth-footer img {
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            color: black;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            border: none;
+            align-items: center;
+        }
+        .foot2{
+            height: 12px;
+            width: 10px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+        }
+
+        .seven {
+            height: 300px;
+            background-color: #00285D;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+        }
+
+        .seven-one {
+            height: 60px;
+            /* border: 1px solid red; */
+            display: flex;
+            margin-top: 30px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* row-gap: 40px; */
+        }
+
+        .information {
+            height: 30px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .information h2 {
+            height: 30px;
+            width: 230px;
+            color: white;
+            /* border: 1px solid red; */
+        }
+
+        .seven-two {
+            height: 300px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            /* justify-content: space-around; */
+            /* flex-direction: row; */
+        }
+         
+        .contect-details {
+            height: 200px;
+            width: 200px;
+            /* border: 1px solid red; */
+            margin-left: 160px;
+            justify-content: space-evenly;
+            /* column-gap: 60px; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contect-details i {
+            height: 20px;
+            width: 200px;
+            /* border: 1px solid red; */
+        }
+        .contect-details i:hover{
+            color: #00BBF0;
+        }
+
+        .contect-details-1 {
+            height: 30px;
+            width: 200px;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .seven-three {
+            height: 200px;
+            width: 200px;
+            /* border: 1px solid red; */
+            margin-left: 30px;
+        }
+
+        .seven-three-one {
+            height: 100px;
+            width: 200px;
+            color: white;
+            font-size: 13px;
+            line-height: 19px;
+            margin-top: 20px;
+            margin-left: 10px;
+            /* border: 1px solid red; */
+        }
+
+        .seven-fourth {
+            height: 200px;
+            width: 200px;
+            /* border: 1px solid red; */
+            margin-left: 35px;
+        }
+        .seven-fourth-one :hover{
+            color: #00BBF0;
+        }
+
+        .seven-fourth-one {
+            height: 100px;
+            width: 200px;
+            color: white;
+            font-size: 13px;
+            line-height: 19px;
+            margin-left: 9px;
+            /* border: 1px solid red; */
+        }
+
+        .seven-fourth-one h3 {
+            height: 20px;
+            width: 100px;
+            /* border: 1px solid red; */
+            margin: 20px;
+            margin-left: 0px;
+        }
+        .seven-fifth {
+            height: 200px;
+            width: 250px;
+            /* border: 1px solid red; */
+            margin-left: 35px;
+        }
+
+        .seven-fifth-one {
+            height: 150px;
+            /* margin-top: -10px; */
+            width: 250px;
+            color: white;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            line-height: 19px;
+          }
+        .seven-fifth h3{
+            height: 20px;
+            width: 100px;
+            /* border: 1px solid red; */
+            margin-top: 30px;
+        }
+        .seven-fifth hr{
+            color: white;
+            margin-top: 12px;
+        }
+        .seven-fifth h4{
+            color: white;
+            margin-top: 12px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            width: 220px;
+            background-color: #00BBF0;
+            /* border: 1px solid red; */
+        }
+        .seven-fifth h4:hover{
+            background-color: #1094F0;
+        }
+        .six-image{
+            height: 80px;
+            width: 80px;
+            /* border: 1px solid red; */
+            margin-left: 30px;
+        }
+        .six-image img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="first">
+        <div class="manubar">
+            <h1>Finexo</h1>
+            <div class="manubar1">
+                <a style="color: #1094F0;">HOME</a>
+                <a>ABOUT</a>
+                <a>SERVICES</a>
+                <a>WHY AS</a>
+                <a>TEAM</a>
+                <a class="login"> <i class="fa-solid fa-user"></i>LOGIN</a>
+                <a class="login1"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        <div class="left">
+            <div class="text">
+                <div class="text1">
+                    <h1>CRYPTO <br>CURRENCY</h1>
+                </div>
+                <div class="text2">
+                    <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta
+                        aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis
+                        delectus repellat modi impedit sequi.</p>
+                </div>
+                <div class="text3">
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/slider-img.png">
+            </div>
+            <!-- <div src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+          </div> -->
+        </div>
+    </section>
+    <section class="second">
+        <div class="wave">
+            <!-- <img src="images/hero-bg.png" > -->
+        </div>
+        <div class="header">
+            <div class="head1">
+                <span>Our <span style="color: #00BBF0;">Services</span></span>
+            </div>
+            <div class="head2">
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="wallet">
+                <img src="images/s1.png">
+                <div class="wallet1">
+                    <h1>CURRENCY WALLET</h1>
+                </div>
+                <div class="wallet2">
+                    <p>fact that a reader will be distracted by the readable content of a page when looking at its
+                        layout. The point of using</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="wallet">
+                <img src="images/s2.png">
+                <div class="wallet1">
+                    <h1> SECURITY STORAGE</h1>
+                </div>
+                <div class="wallet2">
+                    <p>fact that a reader will be distracted by the readable content of a page when looking at its
+                        layout. The point of using</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="wallet">
+                <img src="images/s3.png">
+                <div class="wallet1">
+                    <h1>EXPERT SUPPORT</h1>
+                </div>
+                <div class="wallet2">
+                    <p>fact that a reader will be distracted by the readable content of a page when looking at its
+                        layout. The point of using</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <button>View All</button>
+        </div>
+    </section>
+    <section class="third">
+        <div class="third-head">
+            <div class="About">
+                <span>About <span style="color: #00BBF0;">Us</span></span>
+            </div>
+            <div class="about1">
+                <p>Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum
+                    ipsum voluptatibus</p>
+            </div>
+        </div>
+        </div>
+        <div class="third-container">
+            <div class="third1">
+                <img src="images/about-img.png">
+            </div>
+            <div class="third2">
+                <div>
+                    <h1>We Are Finexo</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text. All</p>
+                    <p>Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at
+                        iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis
+                        quasi expedita.</p>
+                    <button>Read More</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fourth">
+        <div class="fourth-header">
+            <span>Why Choose <span style="color: #00BBF0;">Us</span></span>
+        </div>
+        <div class="choose">
+            <div class="choose1">
+                <img src="images/w1.png">
+            </div>
+            <div class="choose2">
+                <h3>Expert Management</h3>
+            </div>
+            <div class="choose3">
+                <p>Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam!
+                    Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate
+                    ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam
+                    repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+                </p>
+            </div>
+        </div>
+
+        <div class="choose">
+            <div class="choose1">
+                <img src="images/w2.png">
+            </div>
+            <div class="choose2">
+                <h3>Secure Investment</h3>
+            </div>
+            <div class="choose3">
+                <p>Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam!
+                    Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate
+                    ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam
+                    repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+                </p>
+            </div>
+        </div>
+
+        <div class="choose">
+            <div class="choose1">
+                <img src="images/w3.png">
+            </div>
+            <div class="choose2">
+                <h3>Instant Tradings</h3>
+            </div>
+            <div class="choose3">
+                <p>Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam!
+                    Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate
+                    ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam
+                    repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+                </p>
+            </div>
+        </div>
+
+        <div class="choose">
+            <div class="choose1">
+                <img src="images/w4.png">
+            </div>
+            <div class="choose2">
+                <h3>Happy Customers</h3>
+            </div>
+            <div class="choose3">
+                <p>Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam!
+                    Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate
+                    ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam
+                    repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+                </p>
+            </div>
+        </div>
+        <div class="fourth-footer">
+            <button>Read More</button>
+        </div>
+    </section>
+
+    <section class="fifth">
+        <div class="fifth-header">
+            <span style="color: white;">Our<span style="color: #00BBF0;"> Team</span></span>
+        </div>
+        <div class="fifth-container">
+            <div class="fifth-container-one">
+                <div class="fifth-one">
+                    <img src="images/team-1.jpg">
+                </div>
+                <div class="fifth-two">
+                    <h3 style="color: #00BBF0;">Joseph Brown</h3>
+                </div>
+
+                <div class="fifth-three">
+                    <h5 style="color:white;">Marketing Head</h5>
+                </div>
+                <div class="fifth-four">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="fifth-container-one">
+                <div class="fifth-one">
+                    <img src="images/team-2.jpg">
+                </div>
+                <div class="fifth-two">
+                    <h3 style="color: #00BBF0;">Nancy White</h3>
+                </div>
+
+                <div class="fifth-three">
+                    <h5 style="color:white;">Marketing Head</h5>
+                </div>
+                <div class="fifth-four">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="fifth-container-one">
+                <div class="fifth-one">
+                    <img src="images/team-3.jpg">
+                </div>
+                <div class="fifth-two">
+                    <h3 style="color: #00BBF0;">Earl Martinez</h3>
+                </div>
+
+                <div class="fifth-three">
+                    <h5 style="color:white;">Marketing Head</h5>
+                </div>
+                <div class="fifth-four">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="fifth-container-one">
+                <div class="fifth-one">
+                    <img src="images/team-4.jpg">
+                </div>
+                <div class="fifth-two">
+                    <h3 style="color: #00BBF0;">Josephine Allard</h3>
+                </div>
+
+                <div class="fifth-three">
+                    <h5 style="color:white;">Marketing Head</h5>
+                </div>
+                <div class="fifth-four">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sixth">
+        <div class="sixth-header">
+            <span>What says our<span style="color: #00BBF0;"> Customers</span></span>
+        </div>
+        <div class=" sixth-box">
+            <div class="sixth-box-one">
+                <div class="six-image">
+                       <img src="images/client2.jpg" >
+                </div>
+                <div class="six1">
+                    <h3>Zen Court</h3>
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="six2">
+                    <h5>megna aliqua.Ut</h5>
+                </div>
+                <div class="six3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia est praesentium beatae
+                        temporibus sunt officia eius molestiae! Nisi, autem.</p>
+                </div>
+            </div>
+            <div class="sixth-box-one">
+                <div class="six-image">
+                    <img src="images/client1.jpg" >
+             </div>
+             
+                <div class="six1">
+                    <h3>LusDen</h3>
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="six2">
+                    <h5>megna aliqua.Ut</h5>
+                </div>
+                <div class="six3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quia est praesentium beatae
+                        temporibus sunt officia eius molestiae! Nisi, autem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sixth-footer">
+            <div class="foot1"><img src="images/prev.png" alt=""></div>
+            <div class="foot2"><img src="images/next.png" alt=""></div>
+        </div>
+    </section>
+
+    <section class="seven">
+        <div class="seven-one">
+            <div class="information">
+                <h2>Address</h2>
+                <h2>Info</h2>
+                <h2>Links</h2>
+                <h2>Subscribe</h2>
+            </div>
+        </div>
+        <div class="seven-two">
+            <div class="contect-details">
+                <i class="fa-solid fa-location-dot" style="color: white;"><span> Location</span></i>
+                <i class="fa-solid fa-phone" style="color: white;"><span> Call+01 1234567890</span></i>
+                <i class="fa-solid fa-envelope" style="color: white;"><span> demo@gmail.com</span></i>
+                <div class="contect-details-1" style="color: white;">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="seven-three">
+                <div class="seven-three-one">
+                    <p>necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                        Latin words, combined with a handful</p>
+                </div>
+            </div>
+
+            <div class="seven-fourth">
+                <div class="seven-fourth-one">
+                    <h3>Home</h3>
+                    <h3>About</h3>
+                    <h3>Services</h3>
+                    <h3>Why Us</h3>
+                    <h3>Team</h3>
+                </div>
+          </div>
+          
+          <div class="seven-fifth">
+            <div class="seven-fifth-one">
+                <h3>Enter Email</h3>
+                <hr>
+                <h4>Subscribe</h4>
+            </div>
+      </div>
+
+    </section>
+</body>
+
+</html>
